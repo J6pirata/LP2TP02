@@ -1,12 +1,10 @@
+
 import java.awt.*;
 import java.lang.String;
 
  public class Tela extends Frame {
 
-    private Button b1 = new Button("ok");
-    private Button b2 = new Button("limpar ");
-    private Button b3 = new Button("Mostra");
-    private Button b4 = new Button("Sair");
+    
     private Label l1 = new Label("nome");
     private Label l2 = new Label("Endereço");
     private Label l3 = new Label(" idade ");
@@ -21,9 +19,15 @@ import java.lang.String;
             setSize(largura,altura);
             setLocation(colinic, lininic);
             setLayout(new GridLayout(3,2));
-
+          add(l1, new FlowLayout(FlowLayout.LEFT ));
+          add(l2, new FlowLayout(FlowLayout.LEFT ));
+          add(l3, new FlowLayout(FlowLayout.LEFT ));
+          add(f1, new FlowLayout(FlowLayout.RIGHT));
+          add(f2, new FlowLayout(FlowLayout.RIGHT));
+          add(f3, new FlowLayout(FlowLayout.RIGHT));
     }
-    public void AddComponets(Tela tela){
+
+    /*ublic void AddComponets(Tela tela){
     Container c = new Container();
       
      c.add(l1, new FlowLayout(FlowLayout.LEFT ,0,60));
@@ -36,5 +40,5 @@ import java.lang.String;
      c.add(f1, new FlowLayout(FlowLayout.RIGHT));
      c.add(f2, new FlowLayout(FlowLayout.RIGHT));
      c.add(f3, new FlowLayout(FlowLayout.RIGHT));
-    }
-   }
+    }/* */
+  }
